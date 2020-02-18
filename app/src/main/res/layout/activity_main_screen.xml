@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".MainScreenActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="389dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="sans-serif"
+        android:text="What would you like to do?"
+        android:textAlignment="center"
+        android:textColor="#001996"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_quotes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button_quotes"
+        android:layout_width="323dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="record"
+        android:text="Record Audio"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/videosbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/videosbutton"
+        android:layout_width="323dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="151dp"
+        android:onClick="play"
+        android:text="Read To Me"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_quotes" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="115dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="52dp"
+        android:text="Sign Out"
+        android:onClick="signOut"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
